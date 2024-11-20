@@ -45,7 +45,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         children: [
           GestureDetector(
             onTap: () {
-              print("KOKOKOKOKOKKO");
+               Navigator.pushNamed(context, '/edit');
             },
             child: Container(
               color: Colors.black,

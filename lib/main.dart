@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:or/screen/edit_screen.dart';
 
 import 'screen/add_screen.dart';
 import 'screen/main_screen.dart';
@@ -16,12 +17,12 @@ class OR extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '||',
-      initialRoute: '/main',
+      initialRoute: '/profile',
       routes: {
         '/main': (context) => const MainScreen(),
         '/add': (context) => const AddScreen(),
         '/profile': (context) => const ProfileScreen(),
-
+        '/edit': (context) => const EditScreen(),
       },
     );
   }
